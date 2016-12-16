@@ -3,4 +3,4 @@ Description=Script that fetches the hottest submissions of any subreddit.
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/python /usr/local/bin/hotreddit.py
+ExecStart=/usr/bin/hotreddit.py
