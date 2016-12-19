@@ -2,7 +2,8 @@
 Description=Timer for hotreddit.
 
 [Timer]
-OnUnitActiveSec=2h
+OnBootSec=30sec
+OnUnitActiveSec=15min
 Unit=hotreddit.service
 
 [Install]
