@@ -51,9 +51,18 @@ if __name__ == "__main__":
 
     subreddit = random.choice(subs_cfg.split(','))
 
-    hottest = reddit.subreddit(subreddit).hot()
+    hottest = reddit.subreddit(subreddit).hot(limit=20)
+
+    hottest_list = list()
+
+    for submission in hottest:
+        hottest_list.append(submission)
+    
+    subm = random.choice(hottest_list)
+    
+    msg_out = subm.title
 
     with open(msgpath, 'w+') as f:
-        f.write(hottest.next().title)
+        f.write(msg_out)
 
 
