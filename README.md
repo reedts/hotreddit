@@ -32,3 +32,10 @@ Install the package `cowsay` if available for your system and put the following 
 cat ~/.hotreddit/msg | cowsay -f tux
 ```
 and you will be greeted by Tux with the top post of your subreddits every time you start a terminal!
+
+## Requirements
+This package is developed and tested under `python3` with `python-praw-4.0.0`. Any other configurations are
+not supported. However you can of course change this package any way you like and adopt it to your needs.
+
+I'm not in any way a python developer. This script was written just for my system, is crappy and buggy as hell but
+there is a chance that it may help someone with a similar idea.
